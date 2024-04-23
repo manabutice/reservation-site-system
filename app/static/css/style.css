@@ -1,9 +1,11 @@
+/* リセットとボックスモデルの設定 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ボディ全体のスタイリング */
 body {
     background: #F1F1F1;
     display: flex;
@@ -11,6 +13,49 @@ body {
     min-height: 100vh;
 }
 
+/* main要素がフレックスアイテムとして振る舞い、残りのスペースを埋める */
 main {
     flex: 1;
+}
+
+/* プロファイルカードのスタイリング */
+.card-profile {
+    width: 700px; /* 幅の設定 */
+    border: 0; /* 枠線なし */
+    border-radius: 1rem; /* 角丸の設定 */
+    box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.1); /* 影の付加 */
+}
+
+/* ボタンのスタイリング */
+.button {
+    width: 150px; /* 幅の設定 */
+}
+
+/* ボタン要素の詳細なスタイリング */
+.btn {
+    font-size: 80%; /* 文字サイズを小さく */
+    border-radius: 5rem; /* 角丸の設定 */
+    font-weight: bold; /* 文字を太字に */
+}
+
+/* プロファイルテーブルのスタイリング */
+.profile_table {
+    width: 100%; /* 幅を親要素に合わせる */
+    border: 1px solid #D1DBEB; /* 枠線のスタイリング */
+    border-radius: 8px; /* 角丸の設定 */
+    border-collapse: separate; /* 枠線のスタイル変更 */
+    overflow: hidden; /* 内容がはみ出たら隠す */
+}
+
+/* テーブルヘッダーセルのスタイリング */
+.profile_table .header {
+    width: 200px; /* 幅の設定 */
+    padding: 16px 24px; /* 内側の余白 */
+    text-align: left; /* テキストを左揃え */
+    background: #F1F5FA; /* 背景色 */
+}
+
+/* テーブルデータセルのスタイリング */
+.profile_table .data {
+    padding: 16px 24px; /* 内側の余白 */
 }
